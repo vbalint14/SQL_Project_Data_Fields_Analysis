@@ -15,8 +15,8 @@ ORDER BY postings_count DESC
 LIMIT 10;
 ```
 Explanation:
--This query retrieves the top 10 companies with the highest number of job postings.
--It joins company_dim with job_postings_fact on company_id.
--It groups the results by company name and counts the number of postings per company.
--The results are ordered in descending order of the count and limited to 10 records
+- This query retrieves the top 10 companies with the highest number of job postings.
+- It joins company_dim with job_postings_fact on company_id.
+- It groups the results by company name and counts the number of postings per company.
+- The results are ordered in descending order of the count and limited to 10 records
 
