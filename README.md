@@ -1,4 +1,4 @@
-# SQL Queries Documentation
+# Data Fields Analysis Project Documentation
 
 This document provides a step-by-step explanation of seven SQL queries used for analyzing job postings data.
 
