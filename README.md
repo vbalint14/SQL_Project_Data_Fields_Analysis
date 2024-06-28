@@ -1,5 +1,5 @@
+###### [Venter Bálint](https://github.com/vbalint14), 2024.06.28.
 # Data Fields Analysis Project Documentation 
-###### [Venter Bálint](https://github.com/vbalint14)
 This document provides a step-by-step explanation of seven SQL queries used for analyzing job postings data. The source of the dataset was [Luke Barousse](https://github.com/lukebarousse).
 
 ## Query 1: Top 10 Companies by Job Postings
