@@ -60,7 +60,7 @@ LIMIT 10;
 | OpenAI                          | Research Scientist                                                   | 285000.0        |
 
 #### Explanation:
-- This query retrieves the top 50 Data Analyst job postings by average annual salary.
+- This query retrieves the top 10 Data Analyst job postings by average annual salary.
 - It performs a left join between job_postings_fact and company_dim on company_id.
 - It filters the results to include only those with a non-null salary and the job title 'Data Analyst'.
 - The results are ordered in descending order of average salary and limited to 50 records.
