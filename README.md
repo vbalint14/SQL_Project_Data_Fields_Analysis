@@ -33,7 +33,7 @@ LIMIT 10;
 - It groups the results by company name and counts the number of postings per company.
 - The results are ordered in descending order of the count and limited to 10 records
 
-## Query 2: Top 50 Data Analyst Jobs by Salary
+## Query 2: Top 10 Data Analyst Jobs by Salary
 #### Query code:
 ```sql
 SELECT company_dim.name, job_title, salary_year_avg
@@ -43,7 +43,7 @@ ON job_postings_fact.company_id=company_dim.company_id
 WHERE salary_year_avg IS NOT NULL
 AND job_title_short='Data Analyst'
 ORDER BY salary_year_avg DESC
-LIMIT 50;
+LIMIT 10;
 ```
 #### Query result:
 | Name                            | Job Title                                                            | Salary Year Avg |
@@ -58,46 +58,7 @@ LIMIT 50;
 | Care.com                        | Head of Data Analytics                                               | 350000.0        |
 | Meta                            | Director of Analytics                                                | 336500.0        |
 | OpenAI                          | Research Scientist                                                   | 285000.0        |
-| AT&T                            | Associate Director- Data Insights                                    | 255829.5        |
-| Google                          | Partner Technology Manager, Data Analytics and AI                   | 254000.0        |
-| Channel Personnel Services      | Director Analytics                                                   | 245000.0        |
-| Coda Search│Staffing            | Data Sector Analyst - Hedge Fund in Midtown                          | 240000.0        |
-| Anthropic                       | Data Analyst                                                         | 240000.0        |
-| TikTok                          | Investigations and Insights Lead Data Analyst - USDS                 | 239777.5        |
-| TikTok                          | Investigations and Insights Lead Data Analyst - USDS                 | 239777.5        |
-| Asana                           | Data & Intelligence Manager, Finance                                 | 235000.0        |
-| Walmart Global Tech             | Principal, Data Analyst                                              | 234000.0        |
-| Pinterest Job Advertisements    | Data Analyst, Marketing                                              | 232423.0        |
-| Genentech                       | Analytics Director - Cross Ecosystem                                 | 230000.0        |
-| Selby Jennings                  | Reference Data Analyst                                               | 225000.0        |
-| GovCIO                          | Data Analyst                                                         | 225000.0        |
-| Options Clearing Corporation    | Director, Internal Audit, Data Analytics                             | 225000.0        |
-| CliftonLarsonAllen              | Data Analyst Director                                                | 225000.0        |
-| TikTok                          | E-commerce Data Analyst                                              | 224500.0        |
-| TikTok                          | Data Analyst Manager, TikTok-US-Data Security                        | 222500.0        |
-| TikTok                          | TikTok Shop - Data Analyst                                           | 222093.5        |
-| MosaicML                        | Research Scientist / Research Engineer (Greater NYC Area, NY)        | 220000.0        |
-| Ball                            | Staff Consultant - Data Analyst - Springfield, VA location           | 218500.0        |
-| Ball                            | Staff Consultant - Data Analyst --- Springfield, VA location         | 218500.0        |
-| TikTok                          | Lead Data Analyst LIVE - USDS                                        | 217550.0        |
-| Uclahealthcareers               | Data Analyst (Hybrid/Remote)                                         | 217000.0        |
-| F. Hoffmann-La Roche AG         | 88-50100161 Statistical Scientist                                    | 215642.5        |
-| TikTok                          | Product Manager-Data, TikTok E-commerce                              | 215500.0        |
-| Guidehouse                      | Senior Research and Data Analyst                                     | 213000.0        |
-| Noblis                          | Data Analyst-SME                                                     | 210267.0        |
-| TikTok                          | Business Intelligence Data Analyst - Global Monetization Product ... | 208500.0        |
-| SmartAsset                      | Principal Data Analyst (Remote)                                      | 205000.0        |
-| Blue Shield of California       | Data Analyst - Health, Principal                                     | 205000.0        |
-| TikTok                          | Data Analytics- USDS                                                 | 204584.5        |
-| Noblis                          | Data Analyst-SME                                                     | 204000.0        |
-| Walmart Global Tech             | Senior, Data Analyst                                                 | 202000.0        |
-| WINGS-ICT-SOLUTIONS             | Research Engineer (partial work abroad)                              | 200000.0        |
-| Upstart                         | Staff Data Analyst, Credit Analytics                                 | 200000.0        |
-| Central California Alliance for Health | Data Analytics Services Director                         | 200000.0        |
-| Intuit Inc                      | Staff Business Data Analyst                                          | 200000.0        |
-| Trusting Social                 | Research Engineer - Credit Insight                                   | 200000.0        |
-| Airbnb                          | Staff Analytics Engineer, Guest Data                                 | 200000.0        |
-| ThinkingData                    | Data Analyst（SF）                                                   | 200000.0        |
+
 #### Explanation:
 - This query retrieves the top 50 Data Analyst job postings by average annual salary.
 - It performs a left join between job_postings_fact and company_dim on company_id.
